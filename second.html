@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Website</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        let user="admin"
+        let pass="admin"
+        let role="admin"
+
+        let user1="user"
+        let pass1="user"
+        let role1="user"
+
+        let name=prompt("Enter User Name")
+        let password=prompt("Enter Password")
+        let role_name=prompt("Enter Role")
+
+        if(name===user && password===pass && role_name===role)
+        {
+            console.log("You are login Admin");
+            let input = prompt("Enter Product Name");
+            console.log(input);
+        }else if(name===user1 && password===pass1 && role_name===role1)
+        {
+            console.log("Hello User");
+        }else{
+            console.log("sorry ! You Are Not Enter");
+        }
+    </script>
+</body>
+</html>
