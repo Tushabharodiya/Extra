@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let i;
+        console.log("Press :1  for 0-200");
+        console.log("Press :2 for 200-400");
+        console.log("Press :3 for 400 up");
+        console.log("Press :4 Enter Your Choice for under Number");
+        console.log("Press :5 Enter Your Choice for 2 Number");
+        console.log("Press :6 Enter Your Choice For up Number");
+        
+        let input=parseInt(prompt("Enter 1 to 6"))
+        
+       switch (input) {
+        case 1:
+            for(i=0;i<=200;i++)
+            {
+                console.log(i);
+            }
+            break;
+        case 2:
+            for(i=200;i<=400;i++)
+            {
+                console.log(i);
+            }
+            break;
+        case 3:
+            for(i=400;i<=1000;i++)
+            {
+                console.log(i);
+            }
+            break;
+        case 4:
+            let user_input=parseInt(prompt("Enter Your Number"));
+            for(i=0;i<=user_input;i++)
+            {
+                console.log(i);
+            }
+            break;
+        case 5:
+            let user_input1=parseInt(prompt("Enter First Number"))
+            let user_input2=parseInt(prompt("Enter First Number"))
+            for(i=user_input1;i<=user_input2;i++)
+            {
+                console.log(i);
+            }
+            break;
+        case 6:
+            let user_input3=parseInt(prompt("Enter Your Number"));
+            for(i=user_input3;i<=1000;i++)
+            {
+                console.log(i);
+            }
+        default:
+            console.log("Plz ! Enter Valid Choice");
+            break;
+       }
+    </script>
+</body>
+</html>
