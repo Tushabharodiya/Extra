@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <br> <label>Name:<input type="text" id="name" /></label><br><br>
+    <label>Password :<input type="password" id="pass"/></label><br><br>
+    <button onclick="submit()">Submit</button>
+
+    <h1 id="text"></h1>
+
+
+    <script>
+
+        let name= "tusha"
+        let pass=123456;
+        function submit()
+        {
+            let input=document.getElementById("name").value;
+            let input1=document.getElementById("pass").value;
+
+            if(input==name && input1==pass)
+       x     {
+                document.getElementById("text").innerHTML="You Are Login Sucessfully"
+                document.getElementById("text").style.color="green"
+            }else if(input=="" && input1==""){
+                document.getElementById("text").innerHTML="Pleaze Enter Your Name & Password"
+                document.getElementById("text").style.color="blue"
+            }else{
+                document.getElementById("text").innerHTML="Plz ! Enter Valid Name & Password"
+                document.getElementById("text").style.color="red"
+            }
+        }
+    </script>
+</body>
+</html>
