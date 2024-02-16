@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let arr = [
+            {
+            name: "mekup",
+            price: 340,
+            color: "black",
+            available: "yes",
+        },
+        {
+            name: "sliper",
+            price: 150,
+            color: "pink",
+            available: "no",
+        },
+        {
+            name: "parse",
+            price: 250,
+            color: "white",
+            available: "yes",
+        },
+        {
+            name: "bages",
+            price: 350,
+            color: "grey",
+            available: "no",
+        },
+        {
+            name: "jewellery",
+            price: 550,
+            color: "sliver",
+            available: "yes",
+        },
+        {
+            name: "Aprons",
+            price: 550,
+            color: "Black-White",
+            available: "yes",
+        },
+        {
+            name: "Watter Bottle",
+            price: 108,
+            color: "Blue",
+            available: "no",
+        },
+        {
+            name: "Watch",
+            price: 599,
+            color: "Off-white",
+            available: "yes",
+        },
+        {
+            name: "Top",
+            price: 259,
+            color: "Orange",
+            available: "no",
+        },
+        {
+            name: "Chopper",
+            price: 275,
+            color: "Pista",
+            available: "yes",
+            Brand:"RUBICON"
+        },
+        ];
+        //console.log(arr);
+        let result=arr.filter((val)=>val.available==="yes" && val.price>=200 && val.price<=400)
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
