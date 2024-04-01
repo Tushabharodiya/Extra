@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="5px">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>first_name</th>
+                <th>Last_name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+    <script>
+        try {
+            let response = async () => {
+                let res = await (fetch('https://random-data-api.com/api/users/random_user?size=10'))
+                let result = await res.json()
+                console.log(result);
+
+                result.map((val) => {
+                    let tr = document.createElement("tr")
+                    tr.innerHTML = `<th>${val.id}</th>
+                              <th>${val.first_name}</th>
+                              <th>${val.last_name}</th>
+                              <th>${val.email}</th>`
+                    tbody.appendChild(tr)
+                })
+            }
+            response()
+        }catch(err){
+            console.log(err);
+        }
+
+    </script>
+</body>
+
+</html>
